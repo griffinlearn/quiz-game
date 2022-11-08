@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehdi's Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <audio src="./quiz-song.mp3" class="hide" id="audioGame"></audio>
+    <div class="container">
+        <h2 id="bgAnswer">WELCOME TO MEHDI'S QUIZ !!!</h2>
+        <div class="bestScore hide"></div>
+        <div class="infoGame">
+            <h1 id="scoreText" class="hide containerScoreQuest">Score : </h1>
+            <h1 id="numberQuestion" class="hide containerScoreQuest">/ 25</h1>
+        </div>
+        <div id="questionContainer" class="hide">
+            <h3 id="timer"></h3>
+            <div id="question"></div>
+            <div id="answerBtn" class="btnGrid">
+                <button id="option1" class="btn bgBtn answer">Answer 1</button>
+                <button id="option2" class="btn bgBtn answer">Answer 2</button><br>
+                <button id="option3" class="btn bgBtn answer">Answer 3</button>
+                <button id="option4" class="btn bgBtn answer">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="startBtn" class="startBtn btn"><i class="fa-solid fa-gamepad"></i>START</button>
+            <button id="nextBtn" class="nextBtn btn hide">Next</button>
+            <h1 id="congrat" class="hide"></h1>
+            <button id="restartBtn" class="restartBtn btn hide">Restart</button>
+        </div>
+        <div id="result"></div>
+        <div class="highScoreContainer">
+            <h3>HIGHEST SCORE</h3>
+            <div id="bestScore"></div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
